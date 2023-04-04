@@ -50,12 +50,19 @@ namespace OTP_Assessment
         private readonly string srcEmailAddr;
         private readonly string srcEmailPswd;
 
+        /* 
+         * Email_OPT_Module(string emailAddr, string emailPswd) 
+         *   constructor that takes in the email address and password of the email account that will be used to send OTP codes.
+         */
         public Email_OPT_Module(string emailAddr, string emailPswd)
         {
             srcEmailAddr = emailAddr;
             srcEmailPswd = emailPswd;
         }
-
+        /*
+         * void Start()
+         *   Initialize some private fields and create instances of SmtpClient and MailMessage.
+         */
         public void Start()
         {
             expireMinutes = 1;
@@ -76,7 +83,9 @@ namespace OTP_Assessment
                 Subject = "Your OTP Code",
             };
         }
-
+        /*
+         * void Close()
+         */
         public void Close() { }
 
         public string getOTP()
@@ -91,6 +100,13 @@ namespace OTP_Assessment
             STATUS_EMAIL_INVALID
         }
 
+        /*
+         * EmailStatus GenerateOPTEmail(string userEmail)
+         *   method that takes in the email address of the user that will receive the OTP code,
+         *   generates a 6-digit OTP code, sends an email containing the OTP code to the user's
+         *   email address, and returns a status indicating whether the email was sent success-
+         *   fully, the email address is invalid, or an error occurred.
+         */
         public EmailStatus GenerateOPTEmail(string userEmail)
         {
             try
@@ -133,6 +149,12 @@ namespace OTP_Assessment
             STATUS_OTP_TIMEOUT
         }
 
+        /*
+         * async Task CheckOTP(Stream input)
+         *   method that takes in a stream containing the OTP code entered by the user, waits 
+         *   for the OTP code to be entered, and returns a status indicating whether the OTP 
+         *   code was entered correctly, incorrectly, or after the OTPExpiration time.
+         */
         public async Task<OTPStatus> CheckOTP(Stream input)
         {
             StreamReader streamReader = new StreamReader(input);
