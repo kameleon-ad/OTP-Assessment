@@ -1,0 +1,6 @@
+C:\Users\Eagle\source\repos\OTP-Assessment\OTP-Assessment\bin\Debug\OTP-Assessment.exe.config
+C:\Users\Eagle\source\repos\OTP-Assessment\OTP-Assessment\bin\Debug\OTP-Assessment.exe
+C:\Users\Eagle\source\repos\OTP-Assessment\OTP-Assessment\bin\Debug\OTP-Assessment.pdb
+C:\Users\Eagle\source\repos\OTP-Assessment\OTP-Assessment\obj\Debug\OTP-Assessment.csproj.CoreCompileInputs.cache
+C:\Users\Eagle\source\repos\OTP-Assessment\OTP-Assessment\obj\Debug\OTP-Assessment.exe
+C:\Users\Eagle\source\repos\OTP-Assessment\OTP-Assessment\obj\Debug\OTP-Assessment.pdb
