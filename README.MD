@@ -58,3 +58,7 @@ Build the solution: In Visual Studio, open the solution that contains the test p
 - You can perform usability testing to verify that the module is easy to use and understand for the end users.
 - For example, you can ask a group of users to perform common tasks, such as requesting an OTP code, entering the code, and verifying the status returned by the module.
 - You can also ask the users for feedback on the design and user interface of the module, and use their feedback to improve the module.
+
+# OPT Assessment Test Environment
+    Email: peter.james.ds@outlook.com
+    Password: Test!234
