@@ -25,7 +25,7 @@ namespace OTP_Assessment.Tests
         [TestMethod]
         public void GenerateOPTEmail_ShouldReturn_OK_WhenGivenValidEmail()
         {
-            string validEmail = "eujinpotter@gmail.com";
+            string validEmail = "gribnekov.jeong@outlook.com";
 
             // Act
             var result = _module.GenerateOPTEmail(validEmail);
@@ -49,7 +49,7 @@ namespace OTP_Assessment.Tests
         [TestMethod]
         public void CheckOTP_ShouldReturn_OK_WhenGivenValidOTP()
         {
-            string validEmail = "eujinpotter@gmail.com";
+            string validEmail = "gribnekov.jeong@outlook.com";
             _module.GenerateOPTEmail(validEmail);
 
             // Arrange
@@ -69,7 +69,7 @@ namespace OTP_Assessment.Tests
         [TestMethod]
         public void CheckOTP_ShouldReturn_TIMEOUT_WhenGivenExpiredOTP()
         {
-            string validEmail = "eujinpotter@gmail.com";
+            string validEmail = "gribnekov.jeong@outlook.com";
             _module.GenerateOPTEmail(validEmail);
 
             // Arrange
@@ -92,7 +92,7 @@ namespace OTP_Assessment.Tests
         [TestMethod]
         public void CheckOTP_ShouldReturn_FAIL_WhenGivenInvalidOTP()
         {
-            string validEmail = "eujinpotter@gmail.com";
+            string validEmail = "gribnekov.jeong@outlook.com";
             _module.GenerateOPTEmail(validEmail);
 
             // Arrange
