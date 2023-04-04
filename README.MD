@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="./images/FinalResults.png">
+</div>
+
 # OTP Assessments
 
 [Main C# Code](./OTP-Assessment/Prgram.cs)
